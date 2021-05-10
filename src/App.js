@@ -1,18 +1,11 @@
 import React from "react";
-import Contador from "./components/Contador";
-import Jsx from "./components/Jsx";
-import Lista from "./components/Lista";
-import Formulario from "./components/Formulario";
-import FormHook from "./components/FormHook";
+import Saludo from "./components/Saludo";
 
 function App() {
     return (
         <div className="container mt-5">
-            <Contador/><br/><br/><br/>
-            <Jsx/><br/><br/><br/>
-            <Lista/><br/><br/>
-            <Formulario/><br/><br/>
-            <FormHook/><br/><br/>
+            <Saludo persona="Andrea"/><br/>
+            <Saludo persona="Carlos"/><br/><br/>
         </div>
     );
 }
