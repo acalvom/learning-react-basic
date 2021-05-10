@@ -1,19 +1,19 @@
 import React, {Fragment} from 'react';
+import Avatar from "./Avatar";
+import Fecha from "./Fecha";
 
-const Comentario = ({persona}) => { // También valdría (props) y acceder con props.persona.nombre
+const Comentario = ({persona}) => {
     return (
         <Fragment>
             <h2>Comentarios</h2>
             <div className="d-flex align-items-center">
-                <div className="flex-shrink-0">
-                    <img className="mr-3" src={persona.imagen} alt="Cabecera"/>
-                </div>
+                <Avatar imagen={persona.imagen}/>
                 <div className="flex-grow-1 ms-3">
                     <h4>{persona.nombre}</h4>
                     {persona.comentario}
+                    <Fecha fecha={persona.fecha}/>
                 </div>
             </div>
-
         </Fragment>
     );
 };
